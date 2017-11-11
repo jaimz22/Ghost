@@ -1,0 +1,31 @@
+{
+  "name":"vertigolabs/ghost",
+  "description": "A task running daemon",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "James Murray",
+      "email": "jaimz@vertigolabs.org"
+    }
+  ],
+  "require": {
+    "pear/system_daemon": "dev-master",
+    "php-di/php-di": "^5.4",
+    "monolog/monolog": "^1.23",
+    "league/csv": "^8.2",
+    "league/climate": "^3.2",
+    "ramsey/uuid": "^3.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "VertigoLabs\\Ghost\\": "./src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "platform": {
+      "php": "5.6"
+    }
+  }
+}
